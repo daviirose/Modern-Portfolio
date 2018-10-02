@@ -1,0 +1,40 @@
+//Menu Button
+.menu-btn {
+  position: absolute; //An element cn be placed anywhere using right/top
+  z-index: 3; //How close the button is to you
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeOut; //This is like a variable
+
+  //This class defines the three lines for the button
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff;
+    @include easeOut;
+  }
+
+  //Rotate Into X With Menu Lines //Close defines element "Menu-btn close
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      // Line 1 - Rotate //nth-child(1) selects first line
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      // Line 2 - Hide
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      // Line 3 - Rotate
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
