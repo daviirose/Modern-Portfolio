@@ -33,8 +33,102 @@
 
       // Line 3 - Rotate
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
+        transform: rotate(-45deg) translate(6px, -6px);
       }
     }
+  }
+}
+
+//Menu OverLay aka the slide down wall
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible; //Will show when clicking button
+  }
+
+  //Represents Menu-branding/Menu-nav
+  &-branding, //Left slide down
+  &-nav {
+    //Defines your four topics
+    display: flex;
+    flex-flow: column wrap; //Going up and down
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: darken($primary-color, 5);
+    list-style: none; // Gets rid of bullet points
+    transform: translate3d(0, -100%, 0); //Negative made it come down from top
+    @include easeOut;
+
+    &.show {
+      //Slide in from top
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  //Branding side aka left half slide down
+  &-branding {
+    background: $primary-color;
+    @include easeOut;
+    transform: translate3d(0, 100%, 0); //Left side lides up
+
+    &.show {
+      //Slide in from bottom
+      transform: translate3d(0, 0, 0);
+    }
+    .portrait {
+      width: 250px;
+      height: 250px;
+      background: url("../img/portrait.jpg");
+      border-radius: 50%; //Makes it into a circle
+      border: solid 3px $secondary-color;
+      background-size: contain;
+    }
+  }
+
+  //Nav item is the box holding the actual word
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show {
+      //Slide in from right
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.current > a {
+      color: $secondary-color;
+    }
+  }
+
+  //Nav link is the actual word itself
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+  }
+}
+
+//Delay each nav item slide by 0.1s
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
   }
 }
