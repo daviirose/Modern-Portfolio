@@ -1,6 +1,6 @@
 //Menu Button
 .menu-btn {
-  position: absolute; //An element cn be placed anywhere using right/top
+  position: absolute; //An element can be placed anywhere using right/top
   z-index: 3; //How close the button is to you
   right: 35px;
   top: 35px;
@@ -44,7 +44,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  //opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -68,7 +68,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: rgba(darken($primary-color, 5), 0.9);
     list-style: none; // Gets rid of bullet points
     transform: translate3d(0, -100%, 0); //Negative made it come down from top
     @include easeOut;
@@ -81,7 +81,7 @@
 
   //Branding side aka left half slide down
   &-branding {
-    background: $primary-color;
+    background: rgba($primary-color, 0.9);
     @include easeOut;
     transform: translate3d(0, 100%, 0); //Left side slides up
 
