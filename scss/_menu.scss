@@ -48,7 +48,7 @@
   visibility: hidden;
 
   &.show {
-    visibility: visible; //Will show when clicking button
+    visibility: visible; //Will show slide down when clicking button
   }
 
   //Represents Menu-branding/Menu-nav
@@ -83,7 +83,7 @@
   &-branding {
     background: $primary-color;
     @include easeOut;
-    transform: translate3d(0, 100%, 0); //Left side lides up
+    transform: translate3d(0, 100%, 0); //Left side slides up
 
     &.show {
       //Slide in from bottom

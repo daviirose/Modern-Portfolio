@@ -49,6 +49,7 @@ header {
 //Main is the start up page
 main {
   padding: 4rem;
+  padding-bottom: 0; //Took off scroll bar when in mobile
   height: 100%;
 
   .icons {
