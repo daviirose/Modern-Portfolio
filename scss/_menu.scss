@@ -1,6 +1,6 @@
 //Menu Button
 .menu-btn {
-  position: absolute; //An element can be placed anywhere using right/top
+  position: absolute; //An element can be moved around anywhere using right/top
   z-index: 3; //How close the button is to you
   right: 35px;
   top: 35px;
@@ -44,8 +44,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  //opacity: 0.9;
-  visibility: hidden;
+  visibility: hidden; //it wont show unless you click button
 
   &.show {
     visibility: visible; //Will show slide down when clicking button

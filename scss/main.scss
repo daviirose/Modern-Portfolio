@@ -37,7 +37,7 @@ a {
   text-decoration: none;
 }
 header {
-  position: fixed; //Menu stays at the top even we scroll
+  position: fixed; //Menu stays at the top even when we scroll
   z-index: 2; //How close do you wanted to you by layers
   width: 100%;
 }
@@ -72,4 +72,50 @@ main {
       margin-top: 20vh;
     }
   }
+}
+.grid-bio {
+  display: grid;
+}
+
+.grid-container {
+  display: grid;
+}
+.portrait-1 {
+  width: 250px;
+  height: 250px;
+  background: url("../img/portrait.jpg");
+  border-radius: 50%; //Makes it into a circle
+  border: solid 3px $secondary-color;
+  background-size: contain;
+}
+
+.bio {
+  font-size: 12px;
+  height: 50%;
+  padding: 20px;
+}
+
+.container-1,
+.container-2,
+.container-3 {
+  width: 500px;
+  font-size: 12px;
+  padding: 5px 20px 0px 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: $secondary-color 2px solid;
+  margin: 10px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-portrait {
+  display: flex;
+  justify-content: flex-start;
+}
+.flex-bio {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
