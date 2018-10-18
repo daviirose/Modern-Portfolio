@@ -73,13 +73,6 @@ main {
     }
   }
 }
-.grid-bio {
-  display: grid;
-}
-
-.grid-container {
-  display: grid;
-}
 .portrait-1 {
   width: 250px;
   height: 250px;
@@ -88,13 +81,6 @@ main {
   border: solid 3px $secondary-color;
   background-size: contain;
 }
-
-.bio {
-  font-size: 12px;
-  height: 50%;
-  padding: 20px;
-}
-
 .container-1,
 .container-2,
 .container-3 {
@@ -104,7 +90,10 @@ main {
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.6);
   border: $secondary-color 2px solid;
-  margin: 10px;
+  margin: 50px 10px 10px;
+}
+.Core-title {
+  font-size: 18px;
 }
 .flex-container {
   display: flex;
@@ -118,4 +107,12 @@ main {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
+}
+.bio-title {
+  font-weight: 600;
+}
+
+#main-footer {
+  text-align: center;
 }
