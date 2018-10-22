@@ -86,52 +86,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
-@media screen and (max-width: 768px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      width: 150px;
-      height: 150px; } }
-
-@media screen and (max-width: 500px) {
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    align-content: center; }
-  .flex-portrait {
-    margin-left: 13px;
-    padding-bottom: 20px; }
-  #about {
-    display: flex;
-    flex-direction: column; }
-    #about .flex-bio {
-      width: 95%;
-      margin-left: 13px; }
-    #about .container-1,
-    #about .container-2,
-    #about .container-3 {
-      width: 90%;
-      margin-left: 13px; } }
-
 * {
   box-sizing: border-box; }
 
@@ -187,7 +141,7 @@ header {
 main {
   padding: 4rem;
   padding-bottom: 0;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -213,7 +167,7 @@ main {
 .container-3 {
   width: 500px;
   font-size: 12px;
-  padding: 5px 20px 0px 20px;
+  padding: 15px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.6);
   background: #f2f2f2;
@@ -226,10 +180,6 @@ main {
 .flex-container {
   display: flex;
   justify-content: space-around; }
-
-.flex-portrait {
-  display: flex;
-  justify-content: flex-start; }
 
 .flex-bio {
   width: 50%;
@@ -247,3 +197,51 @@ main {
   background: #f2f2f2;
   color: set-text-color(#fff);
   height: 60px; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      width: 150px;
+      height: 150px; }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .flex-portrait {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    padding-bottom: 20px; }
+  #about {
+    display: flex;
+    flex-direction: column; }
+    #about .flex-bio {
+      width: 95%; }
+    #about .container-1,
+    #about .container-2,
+    #about .container-3 {
+      width: 90%; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
