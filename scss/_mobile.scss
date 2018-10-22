@@ -49,7 +49,28 @@
 
 // Smartphones
 @include mediaSm {
-  main#home h1 {
-    margin-top: 10vh;
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .flex-portrait {
+    margin-left: 13px;
+    padding-bottom: 20px;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+
+    .flex-bio {
+      width: 95%;
+      margin-left: 13px;
+    }
+    .container-1,
+    .container-2,
+    .container-3 {
+      width: 90%;
+      margin-left: 13px;
+    }
   }
 }

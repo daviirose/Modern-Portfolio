@@ -89,7 +89,8 @@ main {
   padding: 5px 20px 0px 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.6);
-  border: $secondary-color 2px solid;
+  background: darken($primary-color, 5);
+  border-bottom: $secondary-color 2px solid;
   margin: 50px 10px 10px;
 }
 .Core-title {
@@ -115,4 +116,9 @@ main {
 
 #main-footer {
   text-align: center;
+  padding: 1rem;
+  margin-top: 25px;
+  background: darken($primary-color, 5);
+  color: set-text-color($primary-color);
+  height: 60px;
 }
