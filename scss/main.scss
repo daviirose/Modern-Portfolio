@@ -8,7 +8,7 @@
 body {
   @include background; //Everything in the background mixin will be added onto the body
   background: $primary-color;
-  color: #444;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -33,7 +33,7 @@ h3 {
 }
 
 a {
-  color: #444;
+  color: #fff;
   text-decoration: none;
 }
 header {
@@ -87,7 +87,7 @@ main {
   font-size: 12px;
   padding: 15px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgb(138, 130, 130);
   background: darken($primary-color, 5);
   border-bottom: $secondary-color 2px solid;
   margin: 50px 10px 10px;

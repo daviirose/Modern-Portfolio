@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #444;
+    background: #fff;
     @include easeOut;
   }
 
@@ -113,7 +113,7 @@
     }
   }
 
-  //Nav link is the actual word itself
+  //Nav link
   .nav-link {
     display: inline-block;
     position: relative;
@@ -121,7 +121,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #444;
+    color: #fff;
   }
 }
 
