@@ -126,6 +126,11 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(141, 138, 138, 0.5); }
 
+.lg-heading-contact {
+  margin: 0;
+  font-weight: 400;
+  font-size: 6rem; }
+
 a {
   color: #fff;
   text-decoration: none; }
@@ -277,4 +282,6 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  .lg-heading-contact {
+    margin-left: -30px; } }
