@@ -1,5 +1,5 @@
-$primary-color: #000;
-$secondary-color: #1b7be9;
+$primary-color: rgb(136, 133, 133);
+$secondary-color: #1ca190;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.9;
@@ -24,7 +24,7 @@ $background-opacity: 0.9;
         width: 100%;
         height: 100%;
         z-index: -1; //How close it is to you by layers
-        background: rgb($primary-color, $background-opacity);
+        background: rgba($primary-color, $background-opacity);
       }
     }
   }
