@@ -31,7 +31,11 @@ h3 {
     background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
-
+.lg-heading-contact {
+  margin: 0;
+  font-weight: 400;
+  font-size: 6rem;
+}
 a {
   color: #fff;
   text-decoration: none;
