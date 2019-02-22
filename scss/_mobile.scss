@@ -77,6 +77,16 @@
     margin-top: 10vh;
   }
   .lg-heading-contact {
-    margin-left: -30px;
+    font-size: 3.5rem;
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    font-weight: 400;
+
+    &.lg-heading {
+      font-size: 3.5rem;
+    }
   }
 }
