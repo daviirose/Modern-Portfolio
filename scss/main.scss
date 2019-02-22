@@ -1,3 +1,4 @@
+@import "reset";
 @import "config";
 @import "menu";
 
@@ -29,6 +30,7 @@ h3 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
+    font-size: 1.5rem;
   }
 }
 .lg-heading-contact {
