@@ -14,7 +14,7 @@ $background-opacity: 0.9;
       background: $home-image;
       background-attachment: fixed; //You can not move it
       background-size: cover; //shows full image
-
+      overflow: hidden;
       //This adds an overlay layer "after" bg-img, it's a simple layer over the background image like a see through cover
       &:after {
         content: "";
