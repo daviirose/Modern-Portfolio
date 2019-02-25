@@ -227,7 +227,8 @@ body {
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    overflow: hidden; }
     body#bg-img:after {
       content: "";
       position: absolute;
