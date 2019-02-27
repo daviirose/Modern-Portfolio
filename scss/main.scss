@@ -78,6 +78,26 @@ main {
     }
   }
 }
+.resume {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px 2px;
+  padding: 15px;
+  width: 15%;
+  margin-top: 10px;
+  text-align: center;
+  .resume-pdf {
+    color: white;
+    font-size: 14px;
+
+    display: inline-block;
+  }
+  &:hover {
+    padding: 15px;
+    background: brown;
+    transition: all 0.8s ease-in-out;
+  }
+}
 
 .portrait-1 {
   width: 250px;
