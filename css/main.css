@@ -439,7 +439,11 @@ main {
     h1.lg-heading,
     h2.lg-heading,
     h3.lg-heading {
-      font-size: 3.5rem; }
+      font-size: 3rem; }
+  .resume {
+    margin-top: 35px;
+    width: 80%;
+    display: inline-block; }
   body,
   html {
     overflow-x: hidden;
