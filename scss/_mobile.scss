@@ -86,8 +86,13 @@
     font-weight: 400;
 
     &.lg-heading {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
+  }
+  .resume {
+    margin-top: 35px;
+    width: 80%;
+    display: inline-block;
   }
   body,
   html {
