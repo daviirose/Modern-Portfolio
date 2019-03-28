@@ -10,7 +10,7 @@ body {
   @include background; //Everything in the background mixin will be added onto the body
   background: $primary-color;
   color: #fff;
-  height: 100%;
+  height: 70%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -187,6 +187,87 @@ main {
         color: white;
       }
     }
+  }
+}
+
+// Workflow process section
+.bottom-section {
+  display: flex;
+  .workflow-div {
+    width: 50%;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    .process {
+      height: 30px;
+      font-size: 20px;
+      color: $primary-color;
+      font-weight: bold;
+      margin: 0 auto;
+      padding: 35px 0px 45px;
+    }
+    .line {
+      width: 80%;
+      height: 1px;
+      background-color: $secondary-color;
+      margin: 0 auto;
+    }
+    .planning {
+      background-image: url("../img/planning.jpg");
+      width: 100px;
+      height: 100px;
+      margin: 50px 0px 0px 60px;
+      background-size: cover;
+    }
+    .inline {
+      display: inline-flex;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+    .Discovery {
+      font-size: 15px;
+      color: $primary-color;
+      text-align: center;
+      margin: 10px 0px 0px 50px;
+    }
+    .vertical-line {
+      width: 2px;
+      height: 100px;
+      background-color: #1ca190;
+      margin: 50px 0px 0px 20px;
+    }
+    .planning-content {
+      color: $primary-color;
+      margin: 50px;
+    }
+  }
+
+  // Quote of the day section
+  .quote-div {
+    width: 50%;
+    height: 700px;
+    background-color: #fff;
+    display: flex;
+    //justify-content: flex-start;
+    flex-direction: column;
+  }
+  .quote {
+    height: 30px;
+    font-size: 20px;
+    color: $primary-color;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 35px 0px 45px;
+  }
+  .line {
+    width: 80%;
+    height: 1px;
+    background-color: $secondary-color;
+    margin: 0 auto;
   }
 }
 

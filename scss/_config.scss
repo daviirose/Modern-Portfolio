@@ -17,7 +17,7 @@ $background-opacity: 0.9;
       //This adds an overlay layer "after" bg-img, it's a simple layer over the background image like a see through cover
       &:after {
         content: "";
-        position: absolute; //Means you can move it around
+        position: absolute;
         top: 0;
         right: 0;
         width: 100%;
